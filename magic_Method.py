@@ -8,4 +8,4 @@ print(int_num.__mul__(float_num))
 
 print(float_num.__rmul__(int_num))
 
-int_num2= 50
+int_num2= 570

@@ -24,8 +24,6 @@ my_touple = tuple('abcd')
 print(my_touple)
 
 my_touple2=tuple({
-
-
     "apple": "яблоко",
     "banana": "банан",
     "orange": "апельсин"

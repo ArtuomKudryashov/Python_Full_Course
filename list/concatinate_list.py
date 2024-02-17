@@ -9,3 +9,7 @@ another_list = [4, 5, 6]
 my_list.extend(another_list)
 print(my_list)
 
+my_list2= [1,2,3,4,5,5,6,6,2,3,4,5]
+print(my_list2.count(5))
+print(my_list2.count(3))
+print(my_list2.count(2))

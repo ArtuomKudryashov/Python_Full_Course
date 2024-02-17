@@ -13,7 +13,7 @@ print(my_nums)
 my_nums.clear()
 print(my_nums)
 
-#remove
+print("Delete")
 my_list = [1, 2, 3, 6]
 my_list[3:5] = [1500, 2500,3500,4500,5500,6500]
 print(my_list)

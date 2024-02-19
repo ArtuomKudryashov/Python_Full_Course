@@ -15,7 +15,7 @@ def add(x):
     return lambda y: x + y
 
 add_five = add(5)
-print(add_five(3))  # Выведет: 8
+print(add_five(3))
 
 add_ten = add(10)
-print(add_ten(3))   # Выведет: 13
+print(add_ten(3))

@@ -1,11 +1,13 @@
 def validate_args(fn):
     def wrapper(*args, **kwargs):
+        print("Before")
         all_args = args + tuple(kwargs.values())
         for arg in all_args:
             if not isinstance(arg, (int, float)):
                 raise ValueError(f"Type of the {arg} is {type(arg)}. All arguments must be int or float!")
 
         result = fn(*args, **kwargs)
+        print("After")
         return result
 
     return wrapper

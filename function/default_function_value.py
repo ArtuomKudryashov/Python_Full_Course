@@ -7,6 +7,8 @@ print(mult_by_factor(56))
 
 
 from datetime import date
+
+
 def get_weekday():
     return date.today().strftime('%A')
 
@@ -14,7 +16,7 @@ def get_weekday():
 def create_new_post(post, weekday = get_weekday()):
     post_copy = post.copy()
     post_copy['created_on_weekday'] = weekday
-    print(post_copy)
+    # print(post_copy)
     return  post_copy
 
 initial_post = {

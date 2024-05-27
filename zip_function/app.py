@@ -6,9 +6,9 @@ availability = [True, False,False,True]
 quantities_str=("1234")
 
 
-fruit_qtys_zip = zip(fruits,quantities)
+fruit_qtys_zip = zip(fruits,quantities,quantities_str)
 
 print(fruit_qtys_zip)
 
-fruit_qtys_list = dict(fruit_qtys_zip)
-print(fruit_qtys_list)
+fruit_qtys_zip = list(fruit_qtys_zip)
+print(fruit_qtys_zip)

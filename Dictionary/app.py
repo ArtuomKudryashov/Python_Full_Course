@@ -4,6 +4,16 @@ my_motobike = {
     'engine_vol':1.2
 
 }
+my_motobike2 = {
+    'brand':'Duccati',
+    'price':25000,
+    'engine_vol':1.2
+
+}
+if my_motobike and my_motobike2 and my_motobike == my_motobike2:
+    print("Словари равны.")
+else:
+    print("Словари не равны.")
 # print(my_motobike['brand'])
 #
 # my_motobike['price'] = 7000

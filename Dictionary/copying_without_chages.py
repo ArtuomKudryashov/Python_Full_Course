@@ -1,3 +1,5 @@
+from  copy import deepcopy
+
 info = {
     'name':'Artuom',
     'is_instructor': True

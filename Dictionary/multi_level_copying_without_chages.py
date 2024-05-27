@@ -5,6 +5,8 @@ info = {
 }
 info_copy = info.copy()
 info_copy['review_qty'] = 5
+info_copy['Artuom'] ="Kudryashov"
+
 
 print(info_copy)
 
@@ -32,6 +34,7 @@ info = {
 info_deepcopy=deepcopy(info)
 info_deepcopy['reviews'].append('Great course!')
 info_deepcopy['reviews'].append('Great course!')
+info_deepcopy['reviews'].append('Timati!')
 info['reviews'].append('Super!')
 info['new_key']=10
 

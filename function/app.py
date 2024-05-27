@@ -14,8 +14,21 @@ person_one = {
     'age' :21
 }
 print(id(person_one))
+print("_________1__________-")
 increase_person_age(person_one)
 print(id(person_one))
+print("__________2_________-")
 print(person_name(person_one))
+
+
+
+
 print(person_one['age'])
 print(id(person_one))
+increase_person_age(person_one)
+increase_person_age(person_one)
+increase_person_age(person_one)
+print(person_name(person_one))
+print(person_one)
+
+

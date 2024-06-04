@@ -23,14 +23,20 @@ route_info_with = {
 route_info_with['distance'] = 40
 
 route_info_without = {
-    "speed": 30.7,
+    "speed": 30,
     "time": 4
 }
 route_my_spead = {
     "my_spead": 30
 
 }
+route_dis={
+    "speed": 30,
+    "time": 4
+
+}
 
 print(route_info(route_info_with))
 print(route_info(route_info_without))
 print(route_info(route_my_spead))
+print(route_info(route_dis))

@@ -1,4 +1,7 @@
 def dict_to_list(dictionary):
+    print(dictionary.items())
+    for item in dictionary.items():
+        print(item)
     items_list = []
     for key, value in dictionary.items():
         if isinstance(value, int):  # Проверяем, является ли значение целым числом

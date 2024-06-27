@@ -13,10 +13,10 @@ def check_user_auth(fn):
     return wrapper
 
 @check_user_auth
-def do_sesitive_job():
+def do_sensitive_job():
     print("Result  of some sensitive tasks")
 
 try:
-    do_sesitive_job()
+    do_sensitive_job()
 except Exception as e:
     print(e)

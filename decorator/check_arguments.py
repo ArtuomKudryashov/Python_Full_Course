@@ -17,7 +17,8 @@ def sum_nums(a, b):
 try:
     print(sum_nums(7,2))
     print(sum_nums(10.5,2.3))
-    print(sum_nums([1,2,3], b= '2.3'))
+    print(sum_nums((1,2,3), b= '2.3'))
     print(sum_nums(a= 10.5, b= '2.3'))
+    print(sum_nums(a= "10.5", b= '2.3'))
 except ValueError as e:
     print(e)

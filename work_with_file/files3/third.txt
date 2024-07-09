@@ -1,0 +1,3 @@
+First line in the third file
+Second line in the third file
+last line in the second file

@@ -1,5 +1,6 @@
 my_nums = [10, 50, 0, 5,5, 100]
 print(dir(my_nums))
+print(dir(my_nums))
 
 res = my_nums.count(5)
 print(res)

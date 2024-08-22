@@ -1,5 +1,6 @@
 my_cars = ['BMW', 'Mersedes']
 copied_cars = my_cars
+print(id(my_cars)==id(copied_cars))
 copied_cars.append('Audi')
 
 print(my_cars)
@@ -23,7 +24,7 @@ print(my_cars3)
 print(copied_cars3)
 print(copied_cars3 == my_cars3)
 
-#list
+#12_list
 my_cars4 = ['BMW', 'Mersedes']
 copied_cars4 = list(my_cars4)
 copied_cars4.append('Audi')

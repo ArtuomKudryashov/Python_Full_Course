@@ -13,3 +13,11 @@ my_list2= [1,2,3,4,5,5,6,6,2,3,4,5]
 print(my_list2.count(5))
 print(my_list2.count(3))
 print(my_list2.count(2))
+
+first_two_my_list2 = my_list2[:2]
+print(first_two_my_list2)
+
+middle_ratings =my_list2[1:-1]
+print(middle_ratings)
+
+last_two_ratings = my_list2[-2:]

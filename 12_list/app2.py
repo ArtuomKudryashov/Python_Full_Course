@@ -2,6 +2,7 @@ my_list = [True, "one" , 4 , bool, [3,False], 4.5]
 print(my_list)
 
 my_list.pop(3)
+
 print(my_list)
 
 print(len(my_list))
@@ -35,3 +36,6 @@ print(Full_list)
 my_list.extend(my_laptops2+my_laptops)
 
 print(my_list)
+
+our_laptops = my_laptops.__add__(my_laptops2)
+print(our_laptops)

@@ -22,3 +22,5 @@ info_copy['reviews'].append('Great course!')
 
 print(info)
 print(info_copy)
+print( len(info))
+print( len(info_copy))

@@ -1,4 +1,5 @@
 from Constructor.Person import Person
+# from App import App
 
 
 class Employee(Person):
@@ -32,3 +33,7 @@ class Employee(Person):
     def increase_salary(self, amount):
         self._salary += amount
         print(f"Salary increased by ${amount}. New salary is ${self._salary}")
+
+
+
+

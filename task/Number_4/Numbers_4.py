@@ -150,48 +150,51 @@ import time
 #
 # print(factorial(5))
 
-# print("<<<<<<<<<<<<Decorator>>>>>>>>>>>>")
+print("<<<<<<<<<<<<Decorator>>>>>>>>>>>>")
+
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func (*args,**kwargs)
+        end_time = time.time()
+        result_time = end_time - start_time
+        func_name= func.__name__
+        print((f"Function {func_name} took {result_time:.6f}"))
+
+        return result
+    return wrapper
+@timing_decorator
+def buble_sort(array):
+    n =len(array)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if array[j]> array[j+1]:
+
+                array[j], array[j+1] = array[j+1], array[j]
+                print(array)
+
+    return array
 #
-# def timing_decorator(func):
-#     def wrapper(*args, **kwargs):
-#         start_time = time.time()
-#         result = func (*args,**kwargs)
-#         end_time = time.time()
-#         result_time = end_time - start_time
-#         func_name= func.__name__
-#         print((f"Function {func_name} took {result_time:.6f}"))
+def quick_sort_helper(array):
+    if len(array)<=1:
+        return array
+    a = array[len(array)//2]
+    left=[i for i in array if i< a]
+    middle = [i for i in  array if i ==a]
+    right = [i for i in  array if i >a]
+    return  quick_sort_helper(left) + middle + quick_sort_helper(right)
+
+@timing_decorator
+def quick_sort(array):
+    return  quick_sort_helper(array)
+def generate_random_list(n):
+    return [random.randint(1, n) for _ in range(n)]
+
 #
-#         return result
-#     return wrapper
-# @timing_decorator
-# def buble_sort(array):
-#     n =len(array)
-#     for i in range(n):
-#         for j in range(0, n-i-1):
-#             if array[j]> array[j+1]:
-#                 array[j], array[j+1] = array[j+1], array[j]
-#
-#     return array
-#
-# def quick_sort_helper(array):
-#     if len(array)<=1:
-#         return array
-#     a = array[len(array)//2]
-#     left=[i for i in array if i< a]
-#     middle = [i for i in  array if i ==a]
-#     right = [i for i in  array if i >a]
-#     return  quick_sort_helper(left) + middle + quick_sort_helper(right)
-#
-# @timing_decorator
-# def quick_sort(array):
-#     return  quick_sort_helper(array)
-# def generate_random_list(n):
-#     return [random.randint(1, n) for _ in range(n)]
-#
-#
-# lst = generate_random_list(100000)
-# # print(lst)
+lst = generate_random_list(5)
+print(lst)
 # #
-# # buble_sort(lst)
+buble_sort(lst)
 # # print(quick_sort_helper(lst))
+print(buble_sort(lst))
 # quick_sort(lst)

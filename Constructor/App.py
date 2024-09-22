@@ -28,5 +28,6 @@ class App:
 
 
 if __name__ == "__main__":
+    print("Код выполняется на прямую")
     app = App()
     app.run()
